@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bookstore>
+    <book>
+        <title lang="ENG">sci-fi</title>
+    </book>
+    <book>
+        <title lang="HINDI">self-help</title>
+    </book>
+</bookstore>
