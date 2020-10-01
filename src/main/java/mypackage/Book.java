@@ -5,6 +5,7 @@ import lombok.*;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
+import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
@@ -17,10 +18,12 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "title",
-    "author",
-    "year",
-    "price"
+        "title",
+        "author",
+        "year",
+        "price",
+        "myField",
+        "university"
 })
 @XmlRootElement(name = "book")
 @ToString
@@ -43,6 +46,10 @@ public class Book {
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
     @XmlSchemaType(name = "NCName")
     protected String category;
+    @XmlElement(required = false)
+    protected BigDecimal myField;
+    @XmlElement(required = false)
+    protected List<University> university;
 
 
 }

@@ -5,17 +5,53 @@
         <author>Giada De Laurentiis</author>
         <year>2005</year>
         <price>30.00</price>
+        <university>
+            <universityName>"univ1"</universityName>
+            <location>loc1</location>
+            <fees>1001.00</fees>
+        </university>
+        <university>
+            <universityName>"univ2"</universityName>
+            <location>loc2</location>
+            <fees>1002.00</fees>
+        </university>
     </book>
     <book category="children">
         <title lang="en">Harry Potter</title>
         <author>J K. Rowling</author>
         <year>2005</year>
         <price>29.99</price>
+        <university>
+            <universityName>"univ3"</universityName>
+            <location>loc3</location>
+            <fees>1003.00</fees>
+        </university>
+        <university>
+            <universityName>"univ4"</universityName>
+            <location>loc4</location>
+            <fees>1004.00</fees>
+        </university>
     </book>
     <book category="web">
         <title lang="en">Learning XML</title>
         <author>Erik T. Ray</author>
         <year>2003</year>
         <price>39.95</price>
+        <university>
+            <universityName>"univ5"</universityName>
+            <location>loc5</location>
+            <fees>1005.00</fees>
+        </university>
+        <university>
+            <universityName>"univ6"</universityName>
+            <location>loc6</location>
+            <fees>1006.00</fees>
+        </university>
+
+        <university>
+            <universityName>"univ7"</universityName>
+            <location>loc7</location>
+            <fees>1007.00</fees>
+        </university>
     </book>
 </bookstore>

@@ -35,7 +35,7 @@ class ServiceCallerController {
 	public void callServices() {
 
 		try {
-			xmlMarshaller.objectToXml();
+//			xmlMarshaller.objectToXml();
 			xmlUnmarshaller.xmlToObject();
 		} catch (JAXBException e) {
 			e.printStackTrace();

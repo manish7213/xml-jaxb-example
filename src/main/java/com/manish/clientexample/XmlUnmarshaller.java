@@ -31,16 +31,16 @@ public class XmlUnmarshaller {
             Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
 
             //Setup schema validator
-            SchemaFactory sf = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
-            Schema employeeSchema = sf.newSchema(new File("BookStore.xsd"));
-            jaxbUnmarshaller.setSchema(employeeSchema);
+//            SchemaFactory sf = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
+//            Schema employeeSchema = sf.newSchema(new File("BookStore.xsd"));
+//            jaxbUnmarshaller.setSchema(employeeSchema);
 
             //Unmarshal xml file
             Bookstore bookstore = (Bookstore) jaxbUnmarshaller.unmarshal(new File("BookStore.xml"));
 
             System.out.println(bookstore);
         }
-        catch (JAXBException | SAXException e)
+        catch (JAXBException e)
         {
             e.printStackTrace();
         }
